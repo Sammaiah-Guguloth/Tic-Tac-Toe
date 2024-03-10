@@ -4,7 +4,7 @@ Welcome to  <span style="color:blue">Tic-Tac-Toe</span> game! This project was c
 
 ## How to Play
 
-To play the game, simply open the `index.html` file in your web browsero or you can go to the github pages link given below.
+To play the game, simply open the `index.html` file in your web browser or you can go to the github pages link given below.
 
 Then...
 
