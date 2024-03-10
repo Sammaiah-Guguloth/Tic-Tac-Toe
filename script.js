@@ -75,6 +75,8 @@ function gameOver() {
     console.log(gameGrid);
     winPositions.forEach((condition) => {
 
+        let over = false;
+
         //  checking are there are non - empty boxes as per our winning conditons or positions
         if((gameGrid[condition[0]] !== "" && gameGrid[condition[1]] !== "" && gameGrid[condition[2]] !== "") ) {
 
@@ -90,6 +92,8 @@ function gameOver() {
                     boxes.forEach(box => {
                         box.style.pointerEvents = "none";
                     })
+                    btn.classList.add("active");
+                    
 
                     
                 } else {
@@ -100,13 +104,17 @@ function gameOver() {
                     boxes.forEach(box => {
                         box.style.pointerEvents = "none";
                     })
+                    btn.classList.add("active");
+                    
 
                 }
 
-                btn.classList.add("active");
+                over = true;
+
+                return;
             }
 
-            return;
+            
             
         }
     });
@@ -122,8 +130,10 @@ function gameOver() {
         }
     }
 
-    if(flag) {
-        playerInfo.innerText = "Game Tied !!";
+    if(flag && !over) {
+        // playerInfo.innerText = "Game Tied !!";
+        document.querySelector(".winner").innerText = "Tied !! Play again.";
+        // document.querySelector(".winner").style.color = "#525c43";
         return;
     }
 

@@ -103,5 +103,6 @@
     top: 140px;
     left: 48px;
     font-size: 1.7rem;
-    color: rgba(161, 233, 27, 0.991);
+    font-weight: 600;
+    color: rgba(197, 10, 10, 0.828);
 }
