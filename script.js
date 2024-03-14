@@ -130,7 +130,7 @@ function gameOver() {
         }
     }
 
-    if(flag && !over) {
+    if(flag) {
         // playerInfo.innerText = "Game Tied !!";
         document.querySelector(".winner").innerText = "Tied !! Play again.";
         // document.querySelector(".winner").style.color = "#525c43";
